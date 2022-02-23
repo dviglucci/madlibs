@@ -15,6 +15,7 @@ class Home extends React.Component {
       name: event.target.name.value,
     };
     this.props.createUser(newUser);
+    this.props.history.push('/select');
   }
 
   render() {

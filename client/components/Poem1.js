@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "react-router-dom/Link";
+import { connect } from 'react-redux';
+
 
 const Poem1 = () => {
   return (
