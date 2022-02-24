@@ -11,6 +11,7 @@ class Home extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    console.log('event >>>>', event.target.name.value)
     const newUser = {
       name: event.target.name.value,
     };
@@ -19,7 +20,6 @@ class Home extends React.Component {
   }
 
   render() {
-    const userToPrint = this.props.user || "Awaiting response..."
     return (
       <div>
         Welcome to the Mad Libs poem generator!
@@ -28,9 +28,6 @@ class Home extends React.Component {
           <input type="text" name="name" />
           <button type="submit">Let's go</button>
         </form>
-        <div>
-          New user is: {userToPrint}
-        </div>
       </div>
     );
   }

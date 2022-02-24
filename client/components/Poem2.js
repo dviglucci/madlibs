@@ -9,7 +9,6 @@ class Poem2 extends React.Component {
   };
 
   render () {
-      console.log('NAAAAME >>>>', this.props.user.name)
     return (
       <div>
         <h2>This Is Just To Say</h2>
