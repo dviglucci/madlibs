@@ -3,14 +3,16 @@ import {createLogger} from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import userReducer from '../redux/user';
-import poem2Reducer from '../redux/poem2';
 import poem1Reducer from '../redux/poem1';
+import poem2Reducer from '../redux/poem2';
+import poem3Reducer from '../redux/poem3';
 
 
 const reducer = combineReducers({
   user: userReducer,
   poem1: poem1Reducer,
   poem2: poem2Reducer,
+  poem3: poem3Reducer,
 });
 
 const middleware = composeWithDevTools(

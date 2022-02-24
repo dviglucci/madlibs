@@ -7,10 +7,6 @@ class Poem2 extends React.Component {
     super();
   };
 
-  componentDidMount() {
-      console.log('PROPS >>>', this.props)
-  }
-
   render () {
     return (
       <div>
