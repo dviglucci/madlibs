@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "react-router-dom/Link";
 import { connect } from 'react-redux';
 
 
@@ -8,6 +7,10 @@ class Poem2 extends React.Component {
     super();
   };
 
+  componentDidMount() {
+      console.log('PROPS >>>', this.props)
+  }
+
   render () {
     return (
       <div>
@@ -15,23 +18,23 @@ class Poem2 extends React.Component {
         <h4>By William Carlos Williams and {this.props.user.name}</h4>
         <div>
           <div>I have eaten</div>
-          <div>the plums</div>
+          <div>the {this.props.poem2.pluralNoun}</div>
           <div>that were in</div>
-           <div>the icebox</div>
+           <div>the {this.props.poem2.noun}</div>
         </div>
         
         <div>
           <div>and which</div>
           <div>you were probably</div>
-          <div>saving</div>
+          <div>{this.props.poem2.verbIng}</div>
           <div>for breakfast</div>
         </div>
         
         <div>
           <div>Forgive me</div>
-          <div>they were delicious</div>
-          <div>so sweet</div>
-          <div>and so cold</div>
+          <div>they were {this.props.poem2.adj}</div>
+          <div>so {this.props.poem2.adj2}</div>
+          <div>and so {this.props.poem2.adj3}</div>
         </div>
       </div>
     );
@@ -39,9 +42,16 @@ class Poem2 extends React.Component {
 };
 
 const mapState = (state) => {
-  return {
-    user: state.user,
+    return {
+      user: state.user,
+      poem2: state.poem2,
+    //   pluralNoun: state.pluralNoun,
+    //   noun: state.noun,
+    //   verbIng: state.verbIng,
+    //   adj: state.adj,
+    //   adj2: state.adj2,
+    //   adj3: state.adj3,
+    };
   };
-};
 
 export default connect(mapState)(Poem2);

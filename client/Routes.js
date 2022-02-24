@@ -14,7 +14,8 @@ class Routes extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/select" component={Select} />
         <Route path="/poem1" component={Poem1} />
-        <Route path="/poem2" component={Poem2Form} />
+        <Route exact path="/poem2" component={Poem2Form} />
+        <Route path="/poem2/final" component={Poem2} />
       </div>
     );
   };

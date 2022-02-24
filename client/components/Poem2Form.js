@@ -22,7 +22,7 @@ class Poem2Form extends React.Component {
     };
     console.log('newPoem2', newPoem2);
     this.props.createPoem2(newPoem2);
-    // this.props.history.push('/select');
+    this.props.history.push('/poem2/final');
   }
 
   render () {
