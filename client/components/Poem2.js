@@ -14,7 +14,7 @@ class Poem2 extends React.Component {
   render () {
     return (
       <div>
-        <h2>This Is Just To Say</h2>
+        <h2>This Is Just To {this.props.poem2.verb}</h2>
         <h4>By William Carlos Williams and {this.props.user.name}</h4>
         <div>
           <div>I have eaten</div>
@@ -45,12 +45,6 @@ const mapState = (state) => {
     return {
       user: state.user,
       poem2: state.poem2,
-    //   pluralNoun: state.pluralNoun,
-    //   noun: state.noun,
-    //   verbIng: state.verbIng,
-    //   adj: state.adj,
-    //   adj2: state.adj2,
-    //   adj3: state.adj3,
     };
   };
 

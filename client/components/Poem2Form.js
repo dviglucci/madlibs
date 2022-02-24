@@ -11,8 +11,8 @@ class Poem2Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('PROPS >>>>>', this.props)
     const newPoem2 = {
+      verb: event.target.verb.value,
       pluralNoun: event.target.pluralNoun.value,
       noun: event.target.noun.value,
       verbIng: event.target.verbIng.value,
@@ -30,6 +30,9 @@ class Poem2Form extends React.Component {
       <div>
         <h4>Okay {this.props.user.name}, let's see your poetical stylings! Please enter the following:</h4>
         <form onSubmit={this.handleSubmit}>
+          <label htmlFor="verb">Verb</label>
+          <input type="text" name="verb" />
+
           <label htmlFor="pluralNoun">Plural noun</label>
           <input type="text" name="pluralNoun" />
 
@@ -58,6 +61,7 @@ class Poem2Form extends React.Component {
 const mapState = (state) => {
   return {
     user: state.user,
+    verb: state.verb,
     pluralNoun: state.pluralNoun,
     noun: state.noun,
     verbIng: state.verbIng,

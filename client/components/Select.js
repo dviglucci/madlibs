@@ -5,7 +5,7 @@ const Select = () => {
   return (
    <div>
        What's your poetry vibe?
-       <button>I stand by my life choices</button>
+       <Link to="/poem1">I stand by my life choices</Link>
        <Link to="/poem2">Kinda sorry, kinda not</Link>
        <button>Give me romance</button>
    </div>
