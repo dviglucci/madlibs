@@ -6,6 +6,7 @@ import userReducer from '../redux/user';
 import poem1Reducer from '../redux/poem1';
 import poem2Reducer from '../redux/poem2';
 import poem3Reducer from '../redux/poem3';
+import finalPoemReducer from '../redux/finalPoem';
 
 
 const reducer = combineReducers({
@@ -13,6 +14,7 @@ const reducer = combineReducers({
   poem1: poem1Reducer,
   poem2: poem2Reducer,
   poem3: poem3Reducer,
+  finalPoem: finalPoemReducer,
 });
 
 const middleware = composeWithDevTools(
