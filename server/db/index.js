@@ -10,6 +10,7 @@ const FinalPoem = require('./models/FinalPoem');
 
 // Associations
 User.hasMany(FinalPoem);
+FinalPoem.belongsTo(User);
 
 module.exports = {
   db,

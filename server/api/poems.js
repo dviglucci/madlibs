@@ -5,7 +5,8 @@ const Poem2 = require('../db/models/Poem2.js');
 const Poem3 = require('../db/models/Poem3.js');
 // const FinalPoem = require('../db/models/FinalPoem.js');
 // const { User, Poem1, Poem2, Poem3, FinalPoem } = require('../db/index.js');
-const { FinalPoem } = require('../db/index.js');
+// const { User, FinalPoem } = require('../db/index.js');
+const { models: {User, FinalPoem} } = require('../db/index.js');
 
 // POST /api/poems/poem1
 router.post('/poem1', async (req, res, next) => {
