@@ -24,8 +24,8 @@ class Home extends React.Component {
       <div>
         Welcome to the Mad Libs poem generator!
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Enter your name to get started.</label>
-          <input type="text" name="name" />
+          <label htmlFor="name" id="enter-name">Enter your name to get started.</label>
+          <input type="text" name="name" id="name-input"/>
           <button type="submit">Let's go</button>
         </form>
       </div>

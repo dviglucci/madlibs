@@ -17,29 +17,32 @@ class Poem2 extends React.Component {
 
   render () {
     const finalPoem = 
-      <div>
+    <div>
+      <div className="final-poem">
         <h2>This Is Just To {this.props.poem2.verb}</h2>
         <h4>By William Carlos Williams and {this.props.user.name}</h4>
-        <div>
+        <div className="stanza">
           <div>I have eaten</div>
           <div>the {this.props.poem2.pluralNoun}</div>
           <div>that were in</div>
           <div>the {this.props.poem2.noun}</div>
         </div>
         
-        <div>
+        <div className="stanza">
           <div>and which</div>
           <div>you were probably</div>
           <div>{this.props.poem2.verbIng}</div>
           <div>for breakfast</div>
         </div>
         
-        <div>
+        <div className="stanza">
           <div>Forgive me</div>
           <div>they were {this.props.poem2.adj}</div>
           <div>so {this.props.poem2.adj2}</div>
           <div>and so {this.props.poem2.adj3}</div>
         </div>
+      </div>
+      <button type="submit">Omg share my poem!!!</button>
       </div>
 
       const finalPoemText = (

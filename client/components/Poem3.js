@@ -10,20 +10,21 @@ class Poem3 extends React.Component {
   render () {
     return (
       <div>
+      <div className="final-poem">
         <h2>Excerpt from Romeo and Juliet, Act II Scene II</h2>
         <h4>By William Shakespeare and {this.props.user.name}</h4>
-        <div>
+        <div className="stanza">
           <div>But {this.props.poem3.adj}! What light through yonder window {this.props.poem3.verbS}?</div>
           <div>It is the east, and {this.props.poem3.personsName} is the sun.</div>
           <div>Arise, fair sun, and kill the envious {this.props.poem3.noun},</div>
-           <div>Who is already sick and pale with {this.props.poem3.noun2},</div>
-           <div>That thou, her maid, art far more {this.props.poem3.adj2} than she.</div>
-           <div>Be not her maid since she is {this.props.poem3.adj3}.</div>
-           <div>Her vestal livery is but sick and green,</div>
-           <div>And none but fools do {this.props.poem3.verb} it. {this.props.poem3.exclamation}!</div>
+          <div>Who is already sick and pale with {this.props.poem3.noun2},</div>
+          <div>That thou, her maid, art far more {this.props.poem3.adj2} than she.</div>
+          <div>Be not her maid since she is {this.props.poem3.adj3}.</div>
+          <div>Her vestal livery is but sick and green,</div>
+          <div>And none but fools do {this.props.poem3.verb} it. {this.props.poem3.exclamation}!</div>
         </div>
         
-        <div>
+        <div className="stanza">
           <div>It is my lady. Oh, it is my {this.props.poem3.noun3}.</div>
           <div>Oh, that she knew she were!</div>
           <div>She {this.props.poem3.verb2S}, yet she says nothing. What of that?</div>
@@ -41,6 +42,8 @@ class Poem3 extends React.Component {
           <div>Oh, that I were a glove upon that {this.props.poem3.noun6}</div>
           <div>That I might touch that {this.props.poem3.noun5}!</div>
         </div>
+      </div>
+      <button type="submit">Omg share my poem!!!</button>
       </div>
     );
   };

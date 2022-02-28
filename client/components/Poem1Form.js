@@ -38,7 +38,7 @@ class Poem1Form extends React.Component {
   render () {
     return (
       <div>
-        <h4>Okay {this.props.user.name}, let's see your poetical stylings! Please enter the following:</h4>
+        <div>Okay {this.props.user.name}, let's see your poetical stylings! Please enter the following:</div>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="noun">Noun</label>
           <input type="text" name="noun" />
