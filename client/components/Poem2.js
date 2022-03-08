@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { saveFinalPoem } from "../redux/finalPoem";
+import { Link } from 'react-router-dom';
 
 
 class Poem2 extends React.Component {
@@ -43,6 +44,7 @@ class Poem2 extends React.Component {
         </div>
       </div>
       <button type="submit">Omg share my poem!!!</button>
+      <Link to="/select">Play again</Link>
       </div>
 
       const finalPoemText = (
